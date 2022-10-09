@@ -39,7 +39,7 @@ void afficherScoreJeu(string* v_balles) {
     string score2 = v_balles[1];
 
     if (v_balles[2] == "Avantage1") commentaireFinal = "Joueur 1 a actuellement l'avantage \n";
-    if (v_balles[2] == "Avantage2") commentaireFinal = "Joueur 1 a actuellement l'avantage \n";
+    if (v_balles[2] == "Avantage2") commentaireFinal = "Joueur 2 a actuellement l'avantage \n";
     if (v_balles[2] == "Gagné 1") commentaireFinal = "Joueur 1 gagne le jeu \n";
     if (v_balles[2] == "Gagné 2") commentaireFinal = "Joueur 2 gagne le jeu \n";
     if (v_balles[2] == "Egalite") commentaireFinal = "Les joueurs sont a egalite \n";
