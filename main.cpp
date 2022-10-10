@@ -11,16 +11,16 @@ string demanderPrenom() {
     return prenom;
 }
 
-string demanderNom() {
-    string nom = "";
-    cout << "Donne moi ton nom";
-    cin >> nom;
-    return nom;
+string demanderNomPrenom() {
+    string n_p;
+    cout << "Donne moi ton nom et prénom séparé d'un espace";
+    getline(cin, n_p);
+    return n_p;
 }
+
 
 int main()
 {
-   string prenom = demanderPrenom();
-   string nom = demanderNom();
-   cout << "Bonjour " << prenom << nom;
+   string nomPrenom = demanderNomPrenom();
+   cout << "Bonjour " << nomPrenom;
 }
