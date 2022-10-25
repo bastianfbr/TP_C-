@@ -1,6 +1,7 @@
 #include <iostream>
 #include "CRectangle.h"
-#include "CCercle.h";
+#include "CCercle.h"
+#include "CTriangle.h"
 using namespace std;
 
 int main()
@@ -16,4 +17,11 @@ int main()
 	cercle.afficher();
 	CCercle cercle2 = CCercle(Point(0, 0), 5);
 	cercle2.afficher();
+	cercle.afficherPointDansCercle(cercle.pointDansCercle(point));
+	cercle.afficherPointSurCercle(cercle.pointDansCercle(point));
+	cercle2.afficherPointDansCercle(cercle2.pointDansCercle(point));
+	cercle2.afficherPointSurCercle(cercle2.pointDansCercle(point));
+
+	CTriangle triangle = CTriangle(Point(0, 0), Point(0, 5), Point(5, 0));
+	triangle.afficher();
 }
