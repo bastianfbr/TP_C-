@@ -38,11 +38,29 @@ void CCercle::afficher() {
 }
 
 bool CCercle::pointSurCercle(Point p) {
-	bool comparaison = sqrt(pow(p.x - this->getCentre().x, 2) + pow(p.y - this->getCentre().y, 2)) == this->getDiametre() / 2;
+	bool comparaison = sqrt(pow(p.x - this->getCentre().x, 2) + pow(p.y - this->getCentre().y, 2)) == this->getDiametre() / static_cast<double>(2);
 	return comparaison;
 }
 
 bool CCercle::pointDansCercle(Point p) {
-	bool comparaison = sqrt(pow(p.x - this->getCentre().x, 2) + pow(p.y - this->getCentre().y, 2)) < this->getDiametre() / 2;
+	bool comparaison = sqrt(pow(p.x - this->getCentre().x, 2) + pow(p.y - this->getCentre().y, 2)) < this->getDiametre() / static_cast<double>(2);
 	return comparaison;
+}
+
+void CCercle::afficherPointSurCercle(bool condition) {
+	if (condition) {
+		cout << "Le point est sur le cercle\n\n";
+	}
+	else {
+		cout << "Le point n'est pas sur le cercle\n\n";
+	}
+}
+
+void CCercle::afficherPointDansCercle(bool condition) {
+	if (condition) {
+		cout << "Le point est dans le cercle\n\n";
+	}
+	else {
+		cout << "Le point n'est pas dans le cercle\n\n";
+	}
 }

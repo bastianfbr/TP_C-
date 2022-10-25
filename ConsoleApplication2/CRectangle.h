@@ -9,9 +9,7 @@
 class CRectangle {
 public:
 
-	CRectangle(const int longueur, const int largeur);
-
-	CRectangle();
+	CRectangle(int longueur, int largeur);
 
 	int getLongueur();
 	int getLargeur();

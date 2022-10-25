@@ -59,14 +59,17 @@ bool CRectangle::comparerSurface(CRectangle r) {
 }
 
 void CRectangle::afficherComparaison(CRectangle r) {
-	bool bool_p = this->comparerPerimetre(r);
-	bool bool_s = this->comparerSurface(r);
-	string txt_p = "";
-	string txt_s = "";
-	if (bool_p) { txt_p = "OUI"; }
-	else { txt_p = "NON"; }
-	if (bool_s) { txt_s = "OUI"; }
-	else { txt_s = "NON"; }
-	std::cout << "Le rectangle 1 a un plus grand perimetre que le rectangle 2 : " << txt_p << "\n"
-		<< "Le rectangle 1 a une plus grande surface que le rectangle 2 : " << txt_s;
+	if (this->comparerPerimetre(r)) {
+		std::cout << "Le perimetre du rectangle est plus grand que celui du rectangle 2\n";
+	}
+	else {
+		std::cout << "Le perimetre du rectangle est plus petit que celui du rectangle 2\n";
+	}
+
+	if (this->comparerSurface(r)) {
+		std::cout << "La surface du rectangle est plus grande que celle du rectangle 2\n";
+	}
+	else {
+		std::cout << "La surface du rectangle est plus petite que celle du rectangle 2\n";
+	}
 }

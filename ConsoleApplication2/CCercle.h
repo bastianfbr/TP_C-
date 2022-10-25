@@ -24,7 +24,10 @@ public:
 
 	bool pointSurCercle(const Point p);
 	bool pointDansCercle(const Point p);
+
 	void afficher();
+	void afficherPointSurCercle(bool condition);
+	void afficherPointDansCercle(bool condition);
 private:
 	Point centre;
 	int diametre;
