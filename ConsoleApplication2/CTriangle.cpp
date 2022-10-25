@@ -11,15 +11,15 @@ CTriangle::CTriangle(Point a, Point b, Point c) {
 }
 
 void CTriangle::setPointA(Point newPoint) {
-	this->a = a;
+	this->a = newPoint;
 }
 
 void CTriangle::setPointB(Point newPoint) {
-	this->b = b;
+	this->b = newPoint;
 }
 
 void CTriangle::setPointC(Point newPoint) {
-	this->c = c;
+	this->c = newPoint;
 }
 
 void CTriangle::afficher() {
