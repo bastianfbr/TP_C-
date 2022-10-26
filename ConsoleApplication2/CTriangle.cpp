@@ -3,6 +3,14 @@
 #include "CTriangle.h"
 #include <string>
 
+/**
+ * A constructor for the class CTriangle.
+ * 
+ * @param a
+ * @param b
+ * @param c
+ */
+
 CTriangle::CTriangle(Point a, Point b, Point c) {
 
 	this->a = a;
@@ -37,6 +45,14 @@ void CTriangle::afficher() {
 	
 }
 
+/**
+ * The function takes two points as parameters and returns the distance between them
+ * 
+ * @param pt1 The first point
+ * @param pt2
+ * 
+ * @return the length of the line between the two points.
+ */
 double CTriangle::calculerLongueur(Point pt1, Point pt2) {
 	double longueur = sqrt(pow(pt2.x - pt1.x, 2) + pow(pt2.y - pt1.y, 2));
 	return longueur;
