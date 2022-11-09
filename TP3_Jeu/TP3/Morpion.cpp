@@ -13,7 +13,16 @@ int Morpion::getPion(int ligne, int colonne) {
 	return grille[ligne][colonne];
 }
 
+/**
+ * It sets the value of the cell at the given coordinates to the given player's number.
+ * 
+ * @param ligne the line where the player wants to put his pawn
+ * @param colonne the column number of the grid
+ * @param joueur 1 or 2
+ */
+
 int Morpion::setPion(int ligne, int colonne, int joueur) {
+/* Checking if the player is 1 or 2 and then it is checking if the place is already taken. */
 	int pion = 0;
 	if (joueur == 1) { pion = 10; }
 	else if (joueur == 2) { pion = 20; };
@@ -21,16 +30,16 @@ int Morpion::setPion(int ligne, int colonne, int joueur) {
 	if (!estPlace(grille[ligne-1][colonne-1])) {
 		if (estDansGrille(ligne, colonne)) {
 			grille[ligne-1][colonne-1] = pion;
-			return 1; // Pion placé
+			return 1; // Pion placï¿½
 		}
 		else {
 			std::cout << "La place du pion n'existe pas" << std::endl;
-			return 0; // Pion non placé
+			return 0; // Pion non placï¿½
 		}
 	}
 	else {
-		std::cout << "La place du pion est déjà occupée" << std::endl;
-		return 0; // Pion non placé
+		std::cout << "La place du pion est dï¿½jï¿½ occupï¿½e" << std::endl;
+		return 0; // Pion non placï¿½
 	}
 }
 
@@ -113,6 +122,7 @@ bool Morpion::estGagne() {
 }
 
 void Morpion::jouer() {
+/* The main function of the game. It is the loop that is going to be executed until the game is won. */
 	int joueur  = 1;
 	std::string pion = "X";
 	while (!estGagne()) {
@@ -140,7 +150,7 @@ void Morpion::jouer() {
 	else {
 		joueur = 1;
 	}
-		std::cout << "Le joueur " << joueur << " a gagné" << std::endl;
+		std::cout << "Le joueur " << joueur << " a gagnï¿½" << std::endl;
 }
 
 int Morpion::demanderLigne() {

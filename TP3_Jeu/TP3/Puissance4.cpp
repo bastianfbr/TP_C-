@@ -119,6 +119,7 @@ void Puissance4::afficherGrille()
 
 void Puissance4::jouer()
 {
+/* A game of tic tac toe. */
 	int joueur = 1;
 	std::string pion = "X";
 	while (!estGagne()) {

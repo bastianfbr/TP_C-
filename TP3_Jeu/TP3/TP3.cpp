@@ -8,6 +8,7 @@
 
 int main()
 {	
+/* Creating a new game and launching it. */
 	Jeu jeu;
 	jeu.lancerPartie();
 }

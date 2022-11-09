@@ -25,7 +25,7 @@ public:
 	virtual bool diagonaleComplete() = 0;
 	virtual bool estGagne() = 0;
 	
-	// Création et affichage de la grille
+	// Crï¿½ation et affichage de la grille
 	virtual void initGrille() = 0;
 	virtual void afficherGrille() = 0;
 	
