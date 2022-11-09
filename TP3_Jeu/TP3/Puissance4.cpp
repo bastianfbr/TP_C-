@@ -47,19 +47,40 @@ bool Puissance4::estRemplie() {
 
 bool Puissance4::ligneComplete()
 {
-	// Todo
+	/*
+	for (int i = 0; i < 6; i++) {
+		for (int j = 0; j < 4; j++) {
+			if (grille[i][j] == grille[i][j + 1] && grille[i][j + 1] == grille[i][j + 2] && grille[i][j + 2] == grille[i][j + 3]) {
+				return true;
+			}
+		}
+	} */
 	return false;
 }
 
 bool Puissance4::colonneComplete()
 {
-	// Todo
+	/*
+	for (int i = 0; i < 7; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (grille[j][i] == grille[j + 1][i] && grille[j + 1][i] == grille[j + 2][i] && grille[j + 2][i] == grille[j + 3][i]) {
+				return true;
+			}
+		}
+	} */
 	return false;
 }
 
 bool Puissance4::diagonaleComplete()
 {
-	// Todo
+	/*
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 4; j++) {
+			if (grille[i][j] == grille[i + 1][j + 1] && grille[i + 1][j + 1] == grille[i + 2][j + 2] && grille[i + 2][j + 2] == grille[i + 3][j + 3]) {
+				return true;
+			}
+		}
+	} */
 	return false;
 }
 
